@@ -1,0 +1,361 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* ------------- Définition variables ------------- */
+  
+  :root {
+    --hauteur-navbar: 50px;
+  }
+  
+  /* ------------- Section nav bar ------------- */
+  
+  nav {
+    background-color: #0e3d9b;
+    position: sticky;
+    top: 0;
+    height: var(--hauteur-navbar);
+    text-transform: uppercase;
+    z-index: 1000;
+  }
+  
+  .cart {
+    background-image: url("cart.png");
+    width: 50px;
+    background-size: cover;
+  }
+  
+  nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    list-style: none;
+  }
+  
+  nav ul li {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 0 12px;
+    transition: 0.3s background-color, 0.3s color;
+  }
+  
+  
+  nav ul li a:hover {
+    color: rgba(255,255,255, 0.6);
+  }
+  
+  
+
+  /* ------------- Section best seller ------------- */
+  .best-seller {
+    background-color: #fff;
+    padding: 40px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+  }
+  
+  .best-seller h1 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 2em;
+  }
+  
+  .best-seller-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    justify-content: center;
+  }
+  
+  .best-seller-item {
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .best-seller-item img {
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+    height: 200px;
+    width: 100%;
+  }
+  
+  .descrition-best-seller {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    flex-grow: 1;
+  }
+  
+  .descrition-best-seller h3 {
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .descrition-best-seller p {
+    color: #666;
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
+  
+  .descrition-best-seller button {
+    border: none;
+    color: white;
+    border-radius: 10px;
+    height: 40px;
+    width: 100%;
+    background-color: #2bb04a;
+    cursor: pointer;
+    transition: 0.3s;
+    align-self: flex-end;
+  }
+  
+  .descrition-best-seller button:hover {
+    background-color: #239d40;
+  }
+  
+  
+/* ------------- Section about us ------------- */
+
+.about-us {
+    background-color: #fff;
+    padding: 40px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-us h1 {
+    color: #333;
+    font-size:
+    2.5em;
+  margin-bottom: 30px;
+  }
+  .about-us .content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .about-us img {
+    max-width: 40%;
+    display: block;
+    object-fit: cover;
+    height: auto;
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  .about-us .text {
+    max-width: 50%;
+  }
+  
+  .about-us .text h2 {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 15px;
+  }
+  
+  .about-us .text p {
+    color: #666;
+    font-size: 1em;
+    text-align: justify;
+    margin-bottom: 15px;
+  }
+
+    /* //////////////////////// Page Product description //////////////////////// */
+  
+  /* ------------- Section product ------------- */
+
+  .main-desc{
+    display: flex;
+    flex-direction: row;
+  }
+  .product-desc {
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 5px;
+    width: 75%;
+    box-shadow:  0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1%;
+  }
+  
+  .product-desc h1 {
+    color: #333;
+    font-size:2.5em;
+  }
+  .product-desc .content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .product-desc img {
+    max-width: 40%;
+    display: block;
+    object-fit: cover;
+    height: auto;
+    width: 90%;
+    border-radius: 5px;
+  }
+  
+  .product-desc .text {
+    max-width: 50%;
+  }
+  
+  .product-desc .text h2 {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 15px;
+  }
+  
+  .product-desc .text p {
+    color: #666;
+    font-size: 1em;
+    text-align: justify;
+    margin-bottom: 15px;
+  }
+  .add-to-cart{
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 5px;
+    width: 20%;
+    box-shadow:  0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .add-to-cart button {
+    width: 100%;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    height: 40px;
+    background-color: #2bb04a;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  
+  /* //////////////////////// Page articles //////////////////////// */
+  
+  /* ------------- Section article ------------- */
+  
+  .articles {
+    background-color: #fff;
+    padding: 40px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 0;
+    justify-content: center;
+  }
+  
+  .article {
+    width: 360px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 500px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    
+  }
+  
+  .article img {
+    background-image: url("pipe_1.png");
+    background-color: grey;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0;
+    height: 50%;
+    width: 100%;
+    box-shadow: 7px -2px 45px 5px rgba(0, 0, 0, 0.52) inset;
+    -webkit-box-shadow: 7px -2px 45px 5px rgba(0, 0, 0, 0.52) inset;
+    -moz-box-shadow: 7px -2px 45px 5px rgba(0, 0, 0, 0.52) inset;
+  }
+  
+  .article .description {
+    background-color: white;
+    flex-grow: 1;
+    margin: 0;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .article .description a>button {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    height: 40px;
+    width: 50%;
+    background-color: #2bb04a;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+    .article .description>button {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    height: 35px;
+    width: 10%;
+    background-image: url("speaker.png");
+    background-size: cover;
+    background-color: #2bb04a;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .article .description button:hover {
+    background-color: #239d40;
+  }
+    

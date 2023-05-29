@@ -1,0 +1,117 @@
+	
+<!DOCTYPE html>
+	
+<html lang="fr">
+	
+  <head>
+	
+    <meta charset="UTF-8">
+    <title>Pipe shop | articles</title>
+	
+    <link rel="stylesheet" href="index.css">
+
+
+  </head>
+
+
+	
+  <body>
+      <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Products</a></li>     
+                <li><a href="aboutUs.html">About us</a></li> 
+                <div class="cart">
+                </div>
+            </ul>
+        </nav>
+
+
+        <div class="articles">
+        	<div class="article">
+        		<img src="pipe-bronze.jpg" alt="tuyaux">
+        		<div class="description">
+
+        			<h3>Bronse pipe</h3>
+        			<p>29.99€</p>
+	        		<p>Pipe made from bronze alloy. Produces a high-pitched sound.</p>
+	        		<button class="play-sound-btn"></button>
+						<audio class="sound-effect"><source src="pipe.mp3" type="audio/mpeg"></audio>
+
+	        		<a href="product.html"><button>Buy it</button></a>
+        		</div>
+        	</div>
+        	        	<div class="article">
+        		<img src="pipe-acier-grand-diametre.jpg" alt="tuyaux">
+        		<div class="description">
+        			<h3>Steel pipe with large diameter</h3>
+        			<p>50€</p>
+	        		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, magni!</p>
+	        		<button class="play-sound-btn"></button>
+						<audio class="sound-effect"><source src="pipe.mp3" type="audio/mpeg"></audio>
+	        		<a href="product2.html"><button>Buy it</button></a>
+        		</div>
+        	</div>
+        	        	<div class="article">
+
+        		<img src="pipe_1.png" alt="tuyaux">
+        		<div class="description">
+        			<h3>Plastic pipe</h3>
+        			<p>20€</p>
+	        		<p>This pipe is made from recycled plastic</p>
+	        		<button class="play-sound-btn"></button>
+						<audio class="sound-effect"><source src="pipe.mp3" type="audio/mpeg"></audio>
+	        		<a href="product3.html"><button>Buy it</button></a>
+        		</div>
+        	</div>
+        	        	<div class="article">
+        		<img src="Tube-roud-noir-en-acier.jpg" alt="tuyaux">
+        		<div class="description">
+        			<h3>Steel pipe with small diameter</h3>
+        			<p>35.99€</p>
+	        		<p>Pipe in black steel with a diameter of 2.5cm</p>
+	        		<button class="play-sound-btn"></button>
+						<audio class="sound-effect"><source src="pipe.mp3" type="audio/mpeg"></audio>
+	        		<a href="product4.html"><button>Buy it</button></a>
+        		</div>
+        	</div>
+						<div class="article">
+        		<img src="PVC-pipe.jpg" alt="tuyaux">
+        		<div class="description">
+        			<h3>PVC pipe</h3>
+        			<p>10€</p>
+	        		<p>This pipe is made of pvc and provided with opening on the sides is currently the one with the best quality-price ratio.</p>
+	        		<button class="play-sound-btn"></button>
+						<audio class="sound-effect"><source src="pipe.mp3" type="audio/mpeg"></audio>
+	        		<a href="product5.html"><button>Buy it</button></a>
+        		</div>
+			</div>
+						<div class="article">
+        		<img src="tuyau-glass.jpg" alt="tuyaux">
+        		<div class="description">
+        			<h3>Plexiglass pipe</h3>
+        			<p>14.99€/p>
+	        		<p>This pipe is completely transparent since it is made entirely of plexiglass.</p>
+	        		<button class="play-sound-btn"></button>
+						<audio class="sound-effect"><source src="pipe.mp3" type="audio/mpeg"></audio>
+	        		<a href="product6.html"><button>Buy it</button></a>
+        		</div>
+			</div>
+			
+
+        </div>
+
+    <script>
+      const playBtns = document.querySelectorAll(".play-sound-btn");
+      const soundEffects = document.querySelectorAll(".sound-effect");
+
+      playBtns.forEach((btn, index) => {
+        btn.addEventListener("click", function() {
+          soundEffects[index].currentTime = 0;
+          soundEffects[index].play();
+        });
+      });
+    </script>
+  </body>
+	
+</html>
